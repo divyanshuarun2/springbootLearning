@@ -12,11 +12,7 @@ import org.springframework.context.ApplicationContext;
 public class LearnApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(LearnApplication.class, args);
-				context.getBean(ComponentVsBean.class).run1();
-				context.getBean(ComponentVsBean.class).run2();
-		System.out.println(context.getBean(User2.class));
-		System.out.println(context.getBean(User1.class));
+        SpringApplication.run(LearnApplication.class, args);
 	}
 
 }
